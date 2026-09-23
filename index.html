@@ -192,6 +192,7 @@ nav {
 .price-row .tprice { font-family: 'Bebas Neue'; font-size: 34px; color: var(--ink); }
 .badge { font-size: 11px; font-weight: 800; background: var(--neon); color: #06170f; padding: 4px 10px; border-radius: 999px; white-space: nowrap; }
 .badge-out { background: transparent; border: 1px solid var(--line); color: var(--ink-dim); }
+.badge-urgent { background: var(--amber); color: #1a1000; margin-left: 6px; }
 
 /* ---------- GALLERY ---------- */
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
@@ -385,31 +386,32 @@ footer { border-top: 1px solid var(--line); padding: 40px 0; }
     <div class="prices">
       <div class="price-row active">
         <div class="idx">01</div>
-        <div><div class="tname">Primera tanda</div><div class="tcount">100 tickets</div></div>
+        <div class="tname">Primera tanda</div>
         <span class="badge">MEJOR PRECIO</span>
+        <span class="badge badge-urgent">¡QUEDAN POCAS!</span>
         <div class="tprice">90€</div>
       </div>
       <div class="price-row">
         <div class="idx">02</div>
-        <div><div class="tname">Segunda tanda</div><div class="tcount">50 tickets</div></div>
+        <div class="tname">Segunda tanda</div>
         <span class="badge badge-out">&nbsp;</span>
         <div class="tprice">95€</div>
       </div>
       <div class="price-row">
         <div class="idx">03</div>
-        <div><div class="tname">Tercera tanda</div><div class="tcount">50 tickets</div></div>
+        <div class="tname">Tercera tanda</div>
         <span class="badge badge-out">&nbsp;</span>
         <div class="tprice">100€</div>
       </div>
       <div class="price-row">
         <div class="idx">04</div>
-        <div><div class="tname">Cuarta tanda</div><div class="tcount">50 tickets</div></div>
+        <div class="tname">Cuarta tanda</div>
         <span class="badge badge-out">&nbsp;</span>
         <div class="tprice">105€</div>
       </div>
       <div class="price-row">
         <div class="idx">05</div>
-        <div><div class="tname">Última tanda</div><div class="tcount">Hasta agotar existencias</div></div>
+        <div class="tname">Última tanda</div>
         <span class="badge badge-out">&nbsp;</span>
         <div class="tprice">115€</div>
       </div>
