@@ -95,7 +95,7 @@ nav {
 }
 .eyebrow::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--neon); box-shadow: 0 0 10px var(--neon); }
 .hero h1 {
-  font-size: clamp(48px, 10vw, 108px);
+  font-size: clamp(36px, 7vw, 72px);
   color: var(--ink);
   max-width: 900px;
 }
@@ -211,6 +211,19 @@ nav {
 .price-hero-sub { font-weight: 800; font-size: 17px; color: var(--ink); }
 .price-hero-note { color: var(--ink-dim); font-size: 14px; margin: 8px 0 26px; }
 .price-hero-cta { display: inline-block; }
+
+.hero-bigprice { margin-bottom: 26px; }
+.hero-bigprice-tag {
+  display: inline-block; font-size: 14px; font-weight: 800; letter-spacing: 0.1em;
+  background: var(--amber); color: #1a1000; padding: 7px 16px; border-radius: 999px;
+}
+.hero-bigprice-num {
+  font-family: 'Bebas Neue'; color: var(--neon); line-height: 0.85;
+  font-size: clamp(190px, 52vw, 340px); margin: 14px 0 8px;
+  text-shadow: 0 0 50px rgba(57,255,140,0.55), 0 0 120px rgba(57,255,140,0.25);
+}
+.hero-bigprice-num span { font-size: 0.5em; vertical-align: top; margin-left: 4px; }
+.hero-bigprice-sub { font-weight: 800; font-size: 20px; color: var(--ink); }
 .hero-price {
   display: inline-block; margin: 20px 0 22px; font-weight: 800; font-size: 15px;
   border: 1px solid var(--neon); color: var(--neon); padding: 8px 16px; border-radius: 999px;
@@ -308,10 +321,14 @@ footer { border-top: 1px solid var(--line); padding: 40px 0; }
 
 <section class="hero">
   <div class="wrap hero-inner">
+    <div class="hero-bigprice">
+      <span class="hero-bigprice-tag">NUEVA TANDA</span>
+      <div class="hero-bigprice-num">85<span>€</span></div>
+      <div class="hero-bigprice-sub">por plaza · Budapest → Split</div>
+    </div>
     <span class="eyebrow">Budapest → Split · 8-9 julio · Ultra Europe</span>
     <h1>DUERME EN EL BUS.<br>DESPIERTA EN <em>SPLIT</em>.</h1>
     <p class="hero-sub">Se acabó el tren de 22 horas y el overbooking con desconocidos. Un bus directo, de noche, con tu grupo — llegas descansado y sin haber perdido un día entero de Interrail.</p>
-    <div class="hero-price">Nueva tanda desde <b>85€</b> por plaza</div>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="#reserva">Reservar mi plaza</a>
       <a class="btn btn-ghost" href="#precios">Ver precio</a>
